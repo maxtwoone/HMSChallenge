@@ -11,19 +11,18 @@ def isPalindrome(num):
     return num == reverse(num)
 
 
-def palindrome(num):
-    global counter
+def palindrome(num,counter=0):
     if isPalindrome(num):
         return num, counter
     else:
         num = num + reverse(num)
         counter += 1
         if num <= 1_000_000_000:
-            return palindrome(num)
+            return palindrome(num,counter)
         else:
             return -1, counter
 
-counter = 0
+
 
 print(palindrome(196))
 

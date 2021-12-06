@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Index</title>
+{% endblock %}
+
+{% block body %}
+
+<h1><span class="blau">Saved </span><span class="orange">Palindromes</span></h1>
+
+<div>
+    <table>
+        <tr>
+            <th>Number</th>
+            <th>Palindrome</th>
+            <th>Cycles</th>
+        </tr>
+        {% for palindrome in palindromes: %}
+            <tr>
+                <th>{{palindrome.number}}</th>
+                <th>{{palindrome.palindrome}}</th>
+                <th>{{palindrome.cycles}}</th>
+            </tr>
+        {% endfor %}
+    </table>
+    <form action="/" method="GET">
+        <button class="orange-button">Go Home</button>
+    </form>
+</div>
+
+{% endblock %}
+</html>

@@ -6,19 +6,37 @@
 
 {% block body %}
 
-<h1><span class="blau">Relief</span>p<span class="orange">feiler</span></h1>
+<h1><span class="blau">Palindrome </span><span class="orange">Calculator</span></h1>
 <div class="form">
         <form action="/" method="POST">
-            <label>Enter integer to make into palindrome:
+            <label>Enter integer between 1 and 10,000 to make into palindrome:
                 <input type="text" name="number" id="number">
-            </label><br>
-            <label>Palindrome:
-                <input type="text" name="palindrome" id="palindrome">
             </label>
-            <input type="submit" value="Calculate" class="orange-button">
-            <input type="submit" value="Save to DB" class="blue-button">
+            <input type="submit" value="Calculate" class="orange-button"><br>
         </form>
-    </div>
+</div>
+<div>
+    {% if number %}
+    <form action="/Database" method="POST">
+    <table>
+        <tr>
+            <th>Number</th>
+            <th>Palindrome</th>
+            <th>Cycles</th>
+        </tr>
+        <tr>
+            <th><input type="text" id="number2" name="number2" value={{number}} readonly></th>
+            <th><input type="text" id="palindrome2" name="palindrome2" value={{palindrome}} readonly></th>
+            <th><input type="text" id="cycles2" name="cycles2" value={{cycles}} readonly></th>
+        </tr>
+    </table>
+        <button class="orange-button">Save to DB</button>
+    </form>
+    {% endif %}
+    <form action="/Database" method="GET">
+        <button class="orange-button">Show DB</button>
+    </form>
+</div>
 
 {% endblock %}
 </html>
