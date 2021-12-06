@@ -24,7 +24,7 @@ body {
 .jumbotron {
     background-image: url('https://www.analytical-software.de/wp-content/uploads/2020/04/HMS-Analytical-Software-Data-Science-Analytics_F01.jpg');
     background-size: cover;
-    height: 100%;
+    height: 100px;
 }
 
 h2, h2 a {
