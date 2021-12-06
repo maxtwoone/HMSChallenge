@@ -3,20 +3,22 @@ from flask_sqlalchemy import SQLAlchemy
 import math
 import Palindrome
 
-
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///palindromes.db'
 db = SQLAlchemy(app)
+
 
 class Palindromes(db.Model):
     number = db.Column(db.Integer, primary_key=True)
     palindrome = db.Column(db.Integer, nullable=False)
     cycles = db.Column(db.Integer)
 
+
 def rev(num):
     return int(num != 0) and ((num % 10) * \
-             (10**int(math.log(num, 10))) + \
-                          rev(num // 10))
+                              (10 ** int(math.log(num, 10))) + \
+                              rev(num // 10))
+
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -30,6 +32,7 @@ def index():
             return 'Your number is not an integer between 1 and 10,000'
 
     return render_template('/index.html')
+
 
 @app.route('/Database', methods=['GET', 'POST'])
 def database():
