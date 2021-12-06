@@ -1,0 +1,80 @@
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background-color: #F2FAFC;
+    font-family: 'Bozon', 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.page-footer {
+    background-image: url(https://www.analytical-software.de/wp-content/themes/hms-custom-theme/images/footerbg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    color: #fff;
+    padding-top: 59px;
+    padding-bottom: 59px;
+}
+
+.jumbotron {
+    background-image: url('https://www.analytical-software.de/wp-content/uploads/2020/04/HMS-Analytical-Software-Data-Science-Analytics_F01.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+h2, h2 a {
+    font-size: 3.6rem;
+    line-height: 1.3em;
+    margin-bottom: 0.5em;
+    color: #046A92;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 400;
+}
+
+h1, h1 a {
+    font-weight: 800;
+    color: #515151;
+    font-size: 3.5rem;
+    line-height: 45px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+h1 .blau, h3 .blau, h4 .blau, h5 .blau
+{
+    color: #046A92;
+}
+
+h1 .orange, h3 .orange, h4 .orange, h5 .orange {
+    color: #FFAE00;
+}
+
+b, strong {
+    font-weight: bolder;
+}
+
+.white-container {
+    background-color: #fff;
+    max-width: 1370px;
+    margin: auto;
+}
+
+.orange-button {
+    background-color: #FFAE00;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 0.6rem;
+    transition: background-color 0.3s;
+    border: none;
+}

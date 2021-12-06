@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Index</title>
+{% endblock %}
+
+{% block body %}
+
+<h1><span class="blau">Life <span class="orange">Science</span></span></h1>
+
+<div class="form">
+        <form action="/" method="POST">
+            <input type="text" name="content" id="content">
+            <input type="submit" value="Submit" class="orange-button">
+        </form>
+    </div>
+
+{% endblock %}
+</html>
