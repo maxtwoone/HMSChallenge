@@ -6,13 +6,17 @@
 
 {% block body %}
 
-<h1><span class="blau">Life <span class="orange">Science</span></span></h1>
+<h1><span class="blau">Relief</span>p<span class="orange">feiler</span></h1>
 <div class="form">
         <form action="/" method="POST">
-            <label>Enter number:
-                <input type="text" name="content" id="content">
+            <label>Enter integer to make into palindrome:
+                <input type="text" name="number" id="number">
             </label><br>
-            <input type="submit" value="Submit" class="orange-button">
+            <label>Palindrome:
+                <input type="text" name="palindrome" id="palindrome">
+            </label>
+            <input type="submit" value="Calculate" class="orange-button">
+            <input type="submit" value="Save to DB" class="blue-button">
         </form>
     </div>
 
