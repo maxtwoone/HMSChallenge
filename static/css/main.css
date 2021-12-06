@@ -69,11 +69,12 @@ b, strong {
 
 .orange-button {
     background-color: #FFAE00;
-    width: 100%;
+    width: 30%;
     font-size: 1.4rem;
     font-weight: 400;
     text-transform: none;
     text-align: center;
+    margin-top: 0.6rem;
     margin-bottom: 0.6rem;
     transition: background-color 0.3s;
     border: none;
